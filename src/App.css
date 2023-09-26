@@ -1,0 +1,112 @@
+/* Animasi loading */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+html{
+  background-color: #f0f0f0;
+}
+
+/* Tampilan utama */
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+/* Header */
+.App-header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Judul */
+h1 {
+  font-size: 56px;
+  margin-bottom: 20px;
+}
+
+/* Tabel */
+.table-currency {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Header Tabel */
+.table-currency th {
+  background-color: #007bff;
+  color: #fff;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+/* Baris ganjil dalam tabel */
+.table-currency tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+  font-size: 25px;
+}
+
+/* Baris genap dalam tabel */
+.table-currency tbody tr:nth-child(even) {
+  background-color: #ffffff;
+  font-size: 25px;
+}
+
+/* Baris yang dihover pada tabel */
+.table-currency tbody tr:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+
+/* Teks di kolom 'Currency' */
+.table-currency td:first-child {
+  font-weight: bold;
+  color: #242424;
+  padding: 20px;
+}
+
+/* Teks berwarna biru di kolom 'We Buy' */
+.table-currency td:nth-child(2) {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.table-currency td:nth-child(3) {
+    color: #242424;
+    font-weight: bold;
+  }
+
+/* Teks berwarna hijau di kolom 'We Sell' */
+.table-currency td:nth-child(4) {
+  color: #28a745;
+  font-weight: bold;
+}
+
+/* Animasi loading */
+.loading {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #007bff;
+  font-weight: bold;
+  animation: spin 2s linear infinite;
+}
